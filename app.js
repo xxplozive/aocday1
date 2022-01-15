@@ -1,10 +1,26 @@
 const fs = require('fs')
 
-fs.readFile('/Users/knath/Documents/code/aocday1/input.txt', 'utf8' , (err, data) => {
+fs.readFile('/Users/kartiknath/Documents/code/aocday1/inputsample.txt', 'utf8' , (err, data) => {
   if (err) {
     console.error(err)
     return
   }
-  console.log(data);
-})
+  var array = data.toString().split("\n").map(Number);
+  
+  //for(i in array){
+  //console.log(array[i]);
+  //}
+  
+  function sum3nums(a, b, c) {return a + b + c};
+  
 
+  for (let i=0; i < 1; i++){
+    var totalNumber = sum3nums(array[i], array[i+1], array[i+2]);
+    console.log(totalNumber);
+  };
+  
+
+ // console.log(totalNumber);
+
+
+});
