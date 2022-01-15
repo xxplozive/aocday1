@@ -15,10 +15,13 @@ fs.readFile('/Users/kartiknath/Documents/code/aocday1/inputsample.txt', 'utf8' ,
   
 
   for (let i=0; i < 1; i++){
-    var totalNumber = sum3nums(array[i], array[i+1], array[i+2]);
-    console.log(totalNumber);
+    var totalNumber1 = sum3nums(array[i], array[i+1], array[i+2]);
+    
   };
-  
+
+
+  console.log(totalNumber1);
+
 
  // console.log(totalNumber);
 
